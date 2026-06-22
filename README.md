@@ -1,2 +1,33 @@
-# IPL-Data-Analytics-2008-2023
-Developed an end-to-end IPL Data Analytics project (2008–2023) using Python, SQL, and Power BI. Performed data cleaning, preprocessing, EDA, and SQL analysis to uncover insights on team performance, toss impact, venue trends, and scoring patterns. Built an interactive executive dashboard with KPIs and visualizations for data-driven decision-making.
+# IPL Data Analytics (2008–2023)
+
+## Project Overview
+Brief description...
+
+## Business Problem
+What questions are being answered?
+
+## Tools & Technologies
+- Python
+- SQL
+- Power BI
+- Pandas
+- NumPy
+
+## Dataset
+Source and details.
+
+## Project Workflow
+1. Data Cleaning
+2. EDA
+3. SQL Analysis
+4. Dashboard Development
+
+## Key Insights
+- Toss impact
+- Venue trends
+- Team performance
+- Winning score patterns
+
+## Dashboard Preview
+<img width="1295" height="737" alt="image" src="https://github.com/user-attachments/assets/8abe9168-6832-4e15-bf3a-d55db9750fe5" />
+
