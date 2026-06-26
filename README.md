@@ -143,7 +143,5 @@ Refresh or point the data source connection to your local PostgreSQL server to v
 
 
 
-Status: 🚀 Complete Full-Stack Analytics Project | Ready for Production Review.
-
 
 
