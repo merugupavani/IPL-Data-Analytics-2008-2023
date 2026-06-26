@@ -1,4 +1,4 @@
-````markdown
+
 # 🏏 IPL Full-Stack Data Analytics & BI Pipeline (2008 - 2023)
 
 An end-to-end Data Engineering and Business Intelligence project analyzing 16 seasons of Indian Premier League (IPL) data. This repository features a complete analytics architecture that covers data cleaning in Python, relational database integration with PostgreSQL, advanced analytical querying using SQL, and dynamic interactive reporting via Power BI.
@@ -140,7 +140,7 @@ Refresh or point the data source connection to your local PostgreSQL server to v
 ---
 
 **Status:** 🚀 Complete Full-Stack Analytics Project | Ready for Production Review.
-````
+
 
 
 Status: 🚀 Complete Full-Stack Analytics Project | Ready for Production Review.
