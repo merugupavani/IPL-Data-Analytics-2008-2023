@@ -1,18 +1,23 @@
-**🏏 IPL Full-Stack Data Analytics & BI Pipeline (2008 - 2023)**
+# 🏏 IPL Full-Stack Data Analytics & BI Pipeline (2008 - 2023)
 
 An end-to-end Data Engineering and Business Intelligence project analyzing 16 seasons of Indian Premier League (IPL) data. This repository features a complete analytics architecture that covers data cleaning in Python, relational database integration with PostgreSQL, advanced analytical querying using SQL, and dynamic interactive reporting via Power BI.
 
-**📌 Project Architecture & Workflow**
+---
+
+### 📌 Project Architecture & Workflow
+
 The project is structured as a professional, multi-tier data pipeline:
 
-[ Raw CSV Data ] ➔ [ Pandas Preprocessing ] ➔ [ SQLAlchemy Engine ] ➔ [ PostgreSQL DB ] ➔ [ SQL Queries / Power BI Dashboard ]
-**Data Preprocessing & ETLEngine **(IPL Data Analysis.ipynb):
+```text
+[ Raw CSV Data ] ➔ [ Pandas Preprocessing ] ➔ [ SQLAlchemy Engine ] ➔ [ PostgreSQL DB ] ➔ [ SQL Queries / Power BI Dashboard ]'''text
 
-Uses pandas to read, handle missing entries, and transform the cleaned Ipl-clean-data2008-2023.csv.
+Data Preprocessing & ETL Engine (IPL Data Analysis.ipynb):
+
+Uses pandas to read, handle missing entries, and transform the raw Ipl-clean-data2008-2023.csv.
 
 Establishes a database connection via sqlalchemy and psycopg2 to systematically write the structured data directly into a local PostgreSQL database instance (ipl_database).
 
-**Database Analytical Layer** (ipl_dataset.sql):
+Database Analytical Layer (ipl_dataset.sql):
 
 Contains targeted SQL queries running aggregations directly against the database to answer critical business and performance logic.
 
@@ -28,52 +33,57 @@ Business Intelligence Presentation Layer (ipl-dataset.pbix):
 
 A full enterprise-ready Power BI Desktop Report featuring custom data models, layout design sheets, and specialized visual components like Risk Heatmaps to present structural game insights seamlessly.
 
-**🛠️ Tech Stack**
+🛠️ Tech Stack
 Data Engineering: Python 3.x (pandas, numpy, sqlalchemy, psycopg2)
 
 Database Engine: PostgreSQL (pgAdmin)
 
 Analytical Queries: SQL
 
-**Business Intelligence**: Power BI Desktop
+Business Intelligence: Power BI Desktop
 
-📁** Repository Structure**
+📁 Repository Structure
 Plaintext
 IPL-Data-Analytics-2008-2023/
-├── IPL Data Analysis.ipynb  # Jupyter Notebook handling Data Cleaning & PostgreSQL loading
-├── ipl_dataset.sql          # SQL scripts featuring analytical queries and KPI computations
-├── ipl-dataset.pbix         # Interactive Power BI Dashboard application file
-└── README.md                # Project documentation
+├── IPL Data Analysis.ipynb   # Jupyter Notebook handling Data Cleaning & PostgreSQL loading
+├── ipl_dataset.sql           # SQL scripts featuring analytical queries and KPI computations
+├── ipl-dataset.pbix          # Interactive Power BI Dashboard application file
+└── README.md                 # Project documentation
 📊 SQL Metric Highlights
 The queries within ipl_dataset.sql isolate critical dimensions:
 
-The Toss Impact Formula: ```sql
-SELECT ROUND(100.0 * SUM(CASE WHEN toss_won = winner THEN 1 ELSE 0 END) / COUNT(*), 2) AS toss_win_impact FROM matches;
+The Toss Impact Formula:
 
-Venue Excitement Rating: Computes the average point/run margin per stadium to track which locations produce the most competitive encounters.
+SQL
+SELECT ROUND(100.0 * SUM(CASE WHEN toss_won = winner THEN 1 ELSE 0 END) / COUNT(*), 2) AS toss_win_impact FROM matches;
+Venue Excitement Rating: Computes the average point/run margin per stadium to track which locations produce the most competitive, close encounters.
 
 🔧 Setup & Execution Guide
 Phase 1: Python ETL & Database Load
-Clone the repository to your machine.
+Clone the repository to your local machine.
 
-Install dependencies:
+Install the necessary Python packages:
 
 Bash
 pip install pandas sqlalchemy psycopg2 jupyter
-Open pgAdmin, create a database named ipl_database.
+Open pgAdmin and create a new database named ipl_database.
 
-Run IPL Data Analysis.ipynb to clean your CSV data and load it automatically into PostgreSQL using the SQLAlchemy engine connection.
+Run the code cells sequentially in IPL Data Analysis.ipynb to clean your CSV data and automatically load it into PostgreSQL using the SQLAlchemy engine connection.
 
 Phase 2: Running Database Analytics
-Open the ipl_dataset.sql script inside pgAdmin or any SQL terminal connected to your database.
+Open the ipl_dataset.sql script inside pgAdmin or any SQL terminal connected to your database server.
 
-Execute the queries to analyze captain stats, toss advantages, and ground characteristics.
+Execute the queries to analyze captain statistics, toss advantages, and ground characteristics.
 
 Phase 3: Visualizing the Dashboard
 Open ipl-dataset.pbix using Power BI Desktop.
-## Dashboard Preview
-<img width="1295" height="737" alt="image" src="https://github.com/user-attachments/assets/8abe9168-6832-4e15-bf3a-d55db9750fe5" />
-Refresh or point the data source connection to your database server to view live charts on team title trends, player benchmarks, and stadium records.
 
+Refresh or point the data source connection to your local PostgreSQL server to view live charts on team title trends, player benchmarks, and stadium records.
+
+🖼️ Dashboard Preview
+
+<img width="1295" height="737" alt="image" src="https://github.com/user-attachments/assets/8abe9168-6832-4e15-bf3a-d55db9750fe5" />
 Status: 🚀 Complete Full-Stack Analytics Project | Ready for Production Review.
+
+
 
