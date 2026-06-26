@@ -1,17 +1,17 @@
-🏏 IPL Full-Stack Data Analytics & BI Pipeline (2008 - 2023)
+**🏏 IPL Full-Stack Data Analytics & BI Pipeline (2008 - 2023)**
 An end-to-end Data Engineering and Business Intelligence project analyzing 16 seasons of Indian Premier League (IPL) data. This repository features a complete analytics architecture that covers data cleaning in Python, relational database integration with PostgreSQL, advanced analytical querying using SQL, and dynamic interactive reporting via Power BI.
 
-📌 Project Architecture & Workflow
+**📌 Project Architecture & Workflow**
 The project is structured as a professional, multi-tier data pipeline:
 
 [ Raw CSV Data ] ➔ [ Pandas Preprocessing ] ➔ [ SQLAlchemy Engine ] ➔ [ PostgreSQL DB ] ➔ [ SQL Queries / Power BI Dashboard ]
-Data Preprocessing & ETLEngine (IPL Data Analysis.ipynb):
+**Data Preprocessing & ETLEngine **(IPL Data Analysis.ipynb):
 
 Uses pandas to read, handle missing entries, and transform the cleaned Ipl-clean-data2008-2023.csv.
 
 Establishes a database connection via sqlalchemy and psycopg2 to systematically write the structured data directly into a local PostgreSQL database instance (ipl_database).
 
-Database Analytical Layer (ipl_dataset.sql):
+**Database Analytical Layer** (ipl_dataset.sql):
 
 Contains targeted SQL queries running aggregations directly against the database to answer critical business and performance logic.
 
@@ -27,16 +27,16 @@ Business Intelligence Presentation Layer (ipl-dataset.pbix):
 
 A full enterprise-ready Power BI Desktop Report featuring custom data models, layout design sheets, and specialized visual components like Risk Heatmaps to present structural game insights seamlessly.
 
-🛠️ Tech Stack
+**🛠️ Tech Stack**
 Data Engineering: Python 3.x (pandas, numpy, sqlalchemy, psycopg2)
 
 Database Engine: PostgreSQL (pgAdmin)
 
 Analytical Queries: SQL
 
-Business Intelligence: Power BI Desktop
+**Business Intelligence**: Power BI Desktop
 
-📁 Repository Structure
+📁** Repository Structure**
 Plaintext
 IPL-Data-Analytics-2008-2023/
 ├── IPL Data Analysis.ipynb  # Jupyter Notebook handling Data Cleaning & PostgreSQL loading
